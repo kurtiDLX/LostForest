@@ -10,7 +10,7 @@ public class Runner extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("runner.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../Scene/runner.fxml"));
         primaryStage.setTitle("LostForest");
         primaryStage.setScene(new Scene(root, 900, 700));
         primaryStage.show();
