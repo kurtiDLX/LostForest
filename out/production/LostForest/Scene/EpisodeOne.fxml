@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EpisodeOne">
+   <children>
+      <Button fx:id="nextSceneButton" layoutX="428.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="700.0" prefWidth="469.0" style="-fx-background-color: black;">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <AnchorPane layoutY="564.0" prefHeight="95.0" prefWidth="900.0" style="-fx-background-color: #c0c0c0;">
+         <children>
+            <Text fx:id="episodeOneTextField" layoutX="12.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="876.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="sunImg" fitHeight="260.0" fitWidth="100.0" layoutX="63.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Frame/file/other/goodMorning.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="PersonName" fill="#fc0000" layoutX="14.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stranger" wrappingWidth="86.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
